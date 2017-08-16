@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.searchBox{
+    position: relative;
+    /*margin:200px 0 0 200px;*/
+    top:200px;
+    left:200px;
+}
+.input{
+    top:100px;
+    left:200px;
+    border: none;
+    background: gainsboro;
+    height: 25px;
+    width:200px;
+}
+
+.img1{
+    position: absolute;
+    background: orangered;
+    width: 25px;
+    height:25px;
+    top:0;
+    left:0;
+
+}

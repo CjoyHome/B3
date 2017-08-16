@@ -1,0 +1,26 @@
+{
+  "name": "Bootstrap3",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "app/lib",
+    "mobile/lib"
+  ],
+  "dependencies": {
+    "angular": "1.5.8",
+    "font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.7",
+    "jquery.scrollTo": "^2.1.2",
+    "angular-ui-router": "^0.3.1",
+    "jquery_lazyload": "jquery.lazyload#^1.9.7",
+    "ionic": "",
+    "swiper": "^3.4.0"
+  }
+}

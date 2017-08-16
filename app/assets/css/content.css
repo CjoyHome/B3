@@ -1,0 +1,198 @@
+/*==========内容区背景颜色==========*/
+.content_bg{
+    background: #eeeeee;
+    padding-top: 1.875em;
+    /*height:15em;*/
+    /*display: block !important;*/
+    width:100%;
+    padding-bottom: 3em;
+    /*position: absolute;*/
+    /*height: 100%;*/
+}
+
+
+
+/*=========左边区域==========*/
+
+.content_left{
+    /*padding: 0;*/
+    padding-right: 0;
+}
+
+/*-------区域1-----一*/
+/*标题栏文字*/
+.content_title_text{
+    /*padding-right: 0;*/
+}
+/*标题栏图*/
+.content_title_img{
+    background: url("../img/icon_comments.png") no-repeat;
+    height:3em;
+    padding:0;
+    line-height: 3em;
+    text-align: center;
+}
+/*图片*/
+.content_one_img_box{
+    padding: 0.3em;
+    border:1px solid  #8f8f8f;
+    margin-right: 1em;
+
+}
+.content_one_img{
+    width:100%;
+}
+/*分隔线*/
+.line_width{
+    width:100%;
+}
+.margin_top_20{
+    margin-top: 2em;
+}
+/*换页按钮*/
+.skip_img{
+    background: url("../img/pagination_bg.gif")0 0 scroll  no-repeat;
+    /*background-size:cover;*/
+    height:2.8125em;
+    padding-bottom:1em ;
+    padding-top: 0.625em;
+    padding-left: 1.25em;
+    font-size: 1.125em;
+    /*width: 500px;*/
+}
+/*按钮右*/
+.inner{
+    background: url("../img/pagination_bg.gif") right -2.455em scroll no-repeat;
+    padding:0.6875em 1.5em 1em 6.25em;
+
+}
+
+.blog2{
+    position: absolute;
+    margin-left: -4.125em;
+}
+
+.blog1{
+    position: absolute;
+    margin-left: -5.375em;
+}
+
+.skip{
+    margin-top: 1em;
+}
+/*-------区域2-----一*/
+
+/*==========右边区域==========*/
+
+@media(min-width: 993px ) {
+    /*背景*/
+    .content_right{
+        background: url("../img/sidebar_right_bg.gif") no-repeat;
+        width:21.25em;
+        height:43.5625em;
+        padding-left:0;
+        display: block;
+    }
+
+}
+@media (max-width: 74.0625em ) {
+
+    .content_absolute{
+        position: relative;
+    }
+    /*背景*/
+    .content_right{
+        background: url("../img/sidebar_right_bg.gif") no-repeat;
+        width:21.25em;
+        height:43.5625em;
+        padding-left:0;
+        /*display: none;*/
+        /*left: 100%;*/
+        display: block;
+        position: absolute;
+        left: 100%;
+
+    }
+
+    /*.content_right_block{*/
+        /*background: url("../img/sidebar_right_bg.gif") no-repeat;*/
+        /*width:21.25em;*/
+        /*height:43.5625em;*/
+        /*padding-left:0;*/
+        /*display: block;*/
+
+    /*}*/
+    .content_bg{
+        background: #eeeeee;
+        padding-top: 1.875em;
+        /*height:15em;*/
+        /*display: block !important;*/
+        width:100%;
+        padding-bottom: 3em;
+        /*height: 100%;*/
+    }
+
+}
+
+.more_bg{
+    background: #eeeeee;
+}
+
+/*----footer-----*/
+
+.footer_bg{
+    /*background: #eeeeee;*/
+    /*margin-top: 2em;*/
+    background: url("../img/footer_bg.gif") ;
+    width:100%;
+    position: absolute;
+}
+.footer_font{
+    color: #ffffff;
+}
+
+.ul_text{
+    list-style: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 黑体;
+    padding-left: 0;
+}
+.ul_none{
+    list-style: none;
+    /*background: url("../img/sidebar_list_line.gif") no-repeat;*/
+    width:100%;
+    padding-left: 0;
+}
+.li_bg{
+   color: #2e88c7;
+}
+.li_bg>img{
+    /*padding-top: 0em;*/
+    /*margin-top: 0.3em;*/
+}
+.li_bg:hover{
+    color: rebeccapurple;
+    background: url("../img/table_icons_bg.gif") 0em  0em no-repeat;
+
+}
+/*右边菜单*/
+.right_menu{
+    /*position: relative;*/
+    /*top: 10em;*/
+
+}
+
+/*侧边栏view按钮*/
+.view_btn{
+    background: url("../img/buttons.png") no-repeat;
+    background-size: cover;
+    width:11.0625em;
+    height:3.25em;
+    line-height:3.25em ;
+    text-align: center;
+}
+/*侧边栏view按钮文字变色*/
+.view_btn_text:hover{
+    color: brown;
+}

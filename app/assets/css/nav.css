@@ -1,0 +1,111 @@
+
+/*导航栏*/
+
+.mynav{
+    background:url("../img/slider1_bg_img1.jpg");
+    height: 90px;
+    font-size: 100%;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 10px;
+}
+
+
+/*导航栏内容内间距*/
+.nav-padding{
+    margin-top: 20px;
+}
+/*Logo内间距*/
+.logo-padding{
+    /*padding: 0px;*/
+}
+.navbar-brand img{
+    margin-top: -7px;
+}
+
+/*取消B3导航栏下边距*/
+.navbar{
+    margin-bottom:0;
+}
+.navbar-default .navbar-nav > li > a {
+    color:  #b3b3b3 ;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #b3b3b3 ;
+    white-space: nowrap;
+}
+
+/*导航栏字体*/
+.nav_font{
+    color: #b3b3b3;
+    font-size: 18px;
+    /*color: #262626*/
+    /*color: #f5f5f5;*/
+}
+
+/*修改b3样式*/
+.dropdown-menu{
+    color: #fff;
+    background-color:#0f0f0f ;
+    opacity: 0.9;
+}
+
+
+.dropdown-menu > li > a:active,.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    color: #fff;
+    background-color:black;
+            /*#262626*/
+}
+
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #333;
+    background-color:#0f0f0f ;
+}
+
+.navbar-default .navbar-nav > .open > a:active,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #333;
+    background-color:#0f0f0f ;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #555;
+     background-color: #0f0f0f;
+}
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+     background-color: #0f0f0f;
+    border-color: #337ab7;
+}
+
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #555;
+    background-color:#0f0f0f
+}
+
+
+@media (max-width: 767px) {
+        .mynav{
+            height: auto;
+        }
+        .mynav > div {
+            margin: 0;
+        }
+
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ionic">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/ionic/release/css/ionic.min.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link href="assets/css/welcome.css" rel="stylesheet">
+    <link href="assets/css/content.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/public.css">
+    <link rel="stylesheet" href="assets/css/PricingPage.css">
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <!--B3-->
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--angular-->
+    <script src="lib/angular/angular.min.js"></script>
+
+    <!--ionic-->
+    <script src="lib/ionic/release/js/ionic.bundle.min.js"></script>
+    <script src="lib/ionic/release/js/ionic.min.js"></script>
+    <script src="lib/ionic/release/js/ionic-angular.min.js"></script>
+
+    <!--导航-->
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/menu.js"></script>
+
+</head>
+<body>
+
+
+<ion-side-menus>
+    <!--------------------------------------中间内容------------------------------------------------->
+    <ion-side-menu-content>
+        <!---------------------------------------顶部导航------------------------------------------------>
+        <!--导航栏-->
+        <nav class="navbar navbar-default clearfix  mynav clearfix" role="navigation">
+
+
+            <div class="container nav-padding">
+                <!--logo图标区域-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="assets/img/logo.png" class="img-responsive">
+                    </a>
+                </div>
+                <!--导航条区域-->
+
+                <div class="collapse navbar-collapse nav_font navbar-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-nav-header nav_list">
+                        <!--Slider导航下拉菜单-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Slider <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="index.html"> <img src="assets/img/ico_arrow_blue.gif"> Animated Slider</a></li>
+                                <!--<li class="divider"></li>-->
+                                <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Nivo Slider</a></li>-->
+                                <!--<li class="divider"></li>-->
+                                <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Text Content Slider</a></li>-->
+                                <!--<li class="divider"></li>-->
+                                <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Flash Slider</a></li>-->
+                                <!--<li class="divider"></li>-->
+                                <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Single Image</a></li>-->
+                            </ul>
+                        </li>
+                        <!--Pages导航下拉菜单-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Sidebar on right</a></li>-->
+                                <!--<li class="divider"></li>-->
+                                <li><a href="pageLeft.html"> <img src="assets/img/ico_arrow_blue.gif"> Sidebar on left</a></li>
+                                <li class="divider"></li>
+                                <li><a href="Pages.html"> <img src="assets/img/ico_arrow_blue.gif"> Pricing page</a></li>
+
+                            </ul>
+                        </li>
+                        <!--&lt;!&ndash;Shortcodes导航下拉菜单&ndash;&gt;-->
+                        <!--<li class="dropdown ">-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Shortcodes <span-->
+                        <!--class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu" role="menu">-->
+                        <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Text & Images</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Buttons & Lists</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Charts</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Columns shortcodes</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> PrettyPhoto</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Maps</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Media</a></li>-->
+                        <!--</ul>-->
+                        <!--</li>-->
+                        <!--&lt;!&ndash;Portfolio导航下拉菜单&ndash;&gt;-->
+                        <!--<li class="dropdown">-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu" role="menu">-->
+                        <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Portfolio 1 column</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Portfolio 2 columns</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Portfolio 3 columns</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#"> <img src="assets/img/ico_arrow_blue.gif"> Portfolio 4 columns</a></li>-->
+
+                        <!--</ul>-->
+                        <!--</li>-->
+                        <!--Blog导航-->
+                        <li class=""><a href="blog1.html">Blog</a></li>
+                        <!--Contact导航-->
+                        <li class=""><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <!--<ion-header-bar class="col-center nav_page">-->
+            <!--<a class="title" href="#"><img src="img/logo.png" alt=""></a>-->
+            <!--<span menu-toggle="right" class="button button-clear ion-android-options"></span>-->
+        <!--</ion-header-bar>-->
+        <!------------------------------------------内容------------------------------------------------->
+        <ion-content class="scroll-content has-header">
+
+            <!-------------------------------------搜索栏--------------------------------------------------->
+            <div class=" PricingPage">
+                <div class="text-center ">
+                    <h3>
+                        Welcome to <span>our Blog</span> Category subtitle
+                    </h3>
+                    <form action="" role="form" class="form-inline PricingPage_input">
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" placeholder="&nbsp;&nbsp;Search">
+                            <button class=" ion-android-search form-control-feedback"></button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <!----------------------------------------------模块插入部分--------------------------------------->
+
+            <!-- 内容区域 -->
+            <div class="content_bg">
+
+                <div class="container content_absolute">
+
+                    <div class="row ">
+                        <!--左边内容展示区域-->
+                        <div class=" content_left col-lg-7 col-sm-12 col-xs-12" id="left_content">
+
+                            <!--  第一个文字图片混合-->
+                            <div class="content_one">
+                                <!--内容区标题-->
+                                <!--<div class="row">-->
+                                <div class="col-lg-12 col-xs-12">
+                                    <div class="row row_clearRightPadding">
+                                        <div class="content_title_text col-lg-10 col-xs-10">
+                                            <span class="large-font">WordPress: PHP 4 and MySQL 4 End of Life Announcement and categories selection</span>
+                                        </div>
+                                        <div class="content_title_img col-lg-1 col-xs-2">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                                <p><span class="small-font"><i>3 April, 2012-Funny stuff</i></span></p>
+                                <div class="content_one_img_box">
+                                    <img class="content_one_img" src="assets/img/blog_img_3.jpg">
+                                </div>
+                                <p class="margin_top_20">Our approach with WordPress has always been to make it run on common server
+                                    configurations. We want users to have flexibility when choosing a host for their precious
+                                    content. Because of this strategy, WordPress runs pretty much anywhere. Web hosting platforms, however, change over time, and we occasionally are able to reevaluate some of the require to make it run on common server configurations. We want users to have flexibility when choosing a host for their precious content.
+
+                                    Our approach with WordPress has always been to make it run on common server configurations.
+                                    We want users to have flexibility when choosing a host for their precious content. Because of
+                                    this strategy, lorem ipsum dolor sit WordPress!
+                                </p>
+                                <p><u>Continue reading </u> | <u>Join the discussion</u></p>
+                            </div>
+                            <img class="line_width" src="assets/img/comment_hover.jpg">
+                            <!--  第二个文字图片混合-->
+                            <div class="content_one">
+                                <!--内容区标题-->
+                                <!--<div class="row">-->
+                                <div class="col-lg-12 col-xs-12">
+                                    <div class="row row_clearRightPadding">
+                                        <div class="content_title_text col-lg-10 col-xs-10">
+                                            <span class="large-font">New project coming next month. It’s called freshFolio. See whats this is all about.</span>
+                                        </div>
+                                        <div class="content_title_img col-lg-1 col-xs-2">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                                <p><span class="small-font"><i>4 January, 2012-Funny stuff</i></span></p>
+                                <div class="content_one_img_box">
+                                    <img class="content_one_img" src="assets/img/blog_img_2.jpg">
+                                </div>
+                                <p class="margin_top_20">Main title of the paragraph (h1) Image Frame, position center Lorem ipsum
+                                    dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                    ea commodo consequat. Image Frame with float left Duis aute irure dolor […]
+                                </p>
+                                <p><u>Continue reading </u> | <u>Join the discussion</u></p>
+                            </div>
+                            <img class="line_width" src="assets/img/comment_hover.jpg">
+
+
+                            <!--换页按钮-->
+                            <div class="container skip">
+                                <div class="row">
+                                    <div class="col-xs-offset-3 col-xs-8 col-lg-offset-4 col-lg-10">
+                                <span class="skip_img">
+                                    <a class="page-prev" href="blog1.html">
+                                        <img src="assets/img/pagination_prev.gif">
+                                    </a>
+                                    <span class="inner">
+
+                                    </span>
+                                    <a class="blog1" href="blog1.html">1</a>
+                                    <a class="blog2" href="blog2.html">2</a>
+                                </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--右边导航区-->
+                        <div class="content_right col-lg-4  right_menu" id="right_menu" >
+
+                            <div class="row">
+                                <div class="col-lg-7 col-lg-offset-4 col-xs-6 col-sm-6 col-md-6 col-xs-offset-4 col-sm-offset-4 col-md-offset-4">
+                                    <h3> Categories:
+                                        <img src="assets/img/sidebar_list_line.gif"></h3>
+                                    <ul class="ul_none">
+                                        <li class="li_bg">
+                                            <b>></b> Blog
+                                            <img src="assets/img/sidebar_list_line.gif">
+
+                                        </li>
+                                        <li class="li_bg"><b>></b> Design & Identity
+                                            <img src="assets/img/sidebar_list_line.gif"></li>
+                                        <li class="li_bg"><b>></b> Food for thought
+                                            <img src="assets/img/sidebar_list_line.gif"></li>
+                                        <li class="li_bg"><b>></b> Funny stuff
+                                            <img src="assets/img/sidebar_list_line.gif"></li>
+                                    </ul>
+                                    <h3> View more:
+                                        <img src="assets/img/sidebar_list_line.gif"></h3>
+                                    <ul class="ul_none">
+                                        <li class="li_bg ul_none"><b>></b> Columns shortcodes
+                                            <img src="assets/img/sidebar_list_line.gif"></li>
+                                        <li class="li_bg ul_none"><b>></b> Sidebar on left
+                                            <img src="assets/img/sidebar_list_line.gif"></li>
+                                        <li class="li_bg"><b>></b> Sidebar on right
+                                            <img src="assets/img/sidebar_list_line.gif"></li>
+                                        <li class="li_bg"><b>></b> Text & Images
+                                            <img src="assets/img/sidebar_list_line.gif"></li>
+                                        <li class="li_bg"><b>></b> Typography
+                                            <img src="assets/img/sidebar_list_line.gif"></li>
+                                    </ul>
+                                    <div class="view_btn">
+                                        <span class="view_btn_text"><span>Contact us for a quote</span></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-------------------------------------------------------------------------------------------------->
+            <!-------------------------------------------脚注--------------------------------------------------->
+            <div class="page_footnote text-center">
+                <img src="assets/img/footnote.png" alt="">
+                <p class="copyright ">© 2014 Business WordPress Theme by ThemeFuse</p>
+            </div>
+
+
+        </ion-content>
+
+    </ion-side-menu-content>
+    <!---------------------------------------------左侧菜单-------------------------------------------->
+    <ion-side-menu side="right" width="190" class="sidebar">
+        <header class="bar bar-header bar-stable">
+            <h1 class="title">Navigation</h1>
+        </header>
+        <ul class="mainmenu has-header">
+            <li>
+                <span>Sliders</span>
+            </li>
+            <ul class="submenu">
+                <li><a href="index.html"><span><i class="ion-android-send"></i>&nbsp;Animated Slider</span></a></li>
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;Nivo Slider</span></a></li>-->
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;Text Content Slider</span></a></li>-->
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;Flash Slider</span></a></li>-->
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;Single Image</span></a></li>-->
+            </ul>
+            <li>
+                <span>Pages</span>
+            </li>
+            <ul class="submenu">
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;Sidebar on right</span></a></li>-->
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;Sidebar on left</span></a></li>-->
+                <li><a href="PricingPage.html"><span><i class="ion-android-send"></i>&nbsp;Pricing page</span></a></li>
+            </ul>
+            <li>
+                <span>Shortcodes</span>
+            </li>
+            <ul class="submenu">
+                <li><a href="CustomFonts.html"><span><i class="ion-android-send"></i>&nbsp;Text & Images</span></a></li>
+                <!--<li><a href="CustomFonts.html"><span><i class="ion-android-send"></i>&nbsp;Buttons & Lists</span></a></li>-->
+                <!--<li><a href="CustomFonts.html"><span><i class="ion-android-send"></i>&nbsp;Charts</span></a></li>-->
+                <!--<li><a href="CustomFonts.html"><span><i class="ion-android-send"></i>&nbsp;Columns shortcodes</span></a></li>-->
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;PrettyPhoto</span></a></li>-->
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;Maps</span></a></li>-->
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;Media</span></a></li>-->
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;Styled Boxes</span></a></li>-->
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;Tabs & Toggles</span></a></li>-->
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;Table</span></a></li>-->
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;Typography</span></a></li>-->
+                <!--<li><a href="#"><span><i class="ion-android-send"></i>&nbsp;Others Shortcodes</span></a></li>-->
+            </ul>
+            <li>
+                <span>Portfolio</span>
+            </li>
+            <ul class="submenu">
+                <li><a href="portfolio1.html"><span><i class="ion-android-send"></i>&nbsp;Portfolio 1 column</span></a></li>
+                <li><a href="portfolio2.html"><span><i class="ion-android-send"></i>&nbsp;Portfolio 2 column</span></a></li>
+
+            </ul>
+            <li><span>Blog</span></li>
+            <ul class="submenu">
+                <li><a href="blog1.html"><span><i class="ion-android-send"></i>&nbsp;Category subtitle</span></a></li>
+                <li><a href="blog2.html"><span><i class="ion-android-send"></i>&nbsp;Homepage > Blog</span></a></li>
+            </ul>
+            <li><a href="contact.html"><span>Contact</span></a></li>
+            <ul class="submenu"></ul>
+        </ul>
+    </ion-side-menu>
+
+
+</body>
+</html>

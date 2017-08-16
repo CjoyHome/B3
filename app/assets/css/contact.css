@@ -1,0 +1,133 @@
+
+.contact_mysearch{
+
+}
+.mysearch_text{
+
+}
+
+.small_font{
+    font-size: 14px;
+}
+
+
+
+.mysearch_input{
+    background: url("../img/search_submit.png") no-repeat;
+    background-position-x: 100%;
+    border: 5px solid #cccccc;
+    border-radius: 20px;
+    background-color: white;
+    height: 40px;
+    margin-top: 30px;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+    /*size: 30px;*/
+}
+.map{
+    width:500px ;
+    height:500px;
+}
+
+
+@media (max-width: 768px) {
+    .welcome{
+        height: 125px;
+    }
+    .mysearch_search{
+        margin:-10px auto 0 auto;
+        width:220px;
+
+    }
+    .mysearch_text{
+        text-align: center;
+    }
+
+    .mysearch_input {
+        margin-top: -20px;
+
+    }
+
+
+}
+
+.contact-left {
+
+    margin-top: 40px;
+
+}
+
+.myMap img {
+
+    width: 100%;
+    height: auto;
+}
+
+.form-title {
+
+    padding: 10px 0;
+    border-bottom: 2px solid #bbbbbb;
+
+}
+
+.form-content div {
+
+    margin-top: 20px;
+}
+
+.form-send {
+
+    background-image: url("../img/buttons.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    font-size: 1.8em;
+
+}
+
+.form-reset {
+
+    height: 52px;
+    line-height: 52px;
+    text-align: right;
+}
+
+.contact-right {
+
+    margin-left: 20px;
+}
+
+.contact-right ul li {
+
+    line-height: 30px;
+
+}
+
+.contact-bottom {
+
+    background-color: white;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.contact-bottom ul {
+
+    margin-left: -30px;
+
+}
+
+@media (max-width: 800px) {
+
+
+    .form-send {
+        width: 60%;
+        margin: 0 auto;
+
+    }
+
+}
+
+

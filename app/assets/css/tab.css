@@ -1,0 +1,26 @@
+.tab_show{
+    margin-top: 50px;
+
+}
+.tab_top{
+    padding-left: 5px;
+    height: 43px;
+    line-height: 43px;
+    background-image: url("../img/tabs-bg.png");
+    background-size: 100% auto;
+    border-radius: 5px;
+    overflow: hidden;
+    zoom:1;
+}
+.tab_right{
+    float: right;
+    margin-right: 20px;
+}
+.tab-content_bg{
+    background: white;
+    padding: 10px;
+}
+
+.cjh_img{
+    margin-top: -10px;
+}

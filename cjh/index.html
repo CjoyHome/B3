@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="$modelName$">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+    <!--jquery-->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <!--B3-->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--angular-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <!--angular路由-->
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--模块顺序【1】-->
+    <script src="app.js"></script>
+    <!--路由表-->
+    <script src="router/uiRouter.js"></script>
+    <script src="run/run.js"></script>
+    <script src="server/basePath.js"></script>
+    <!--其他控制器-->
+    <script src="controller/indexCtrl.js"></script>
+
+</head>
+<body>
+<div ng-controller="indexCtrl">
+
+    {{1+1}}
+
+</div>
+</body>
+</html>

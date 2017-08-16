@@ -1,0 +1,22 @@
+.carousel_box{
+    background-image: url("../img/slider1_bg_img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -10px;
+    padding-top: 10px;
+}
+
+
+.nav-arrows {
+    display: block;
+}
+
+/*.carousel_img{*/
+    /*position: relative;*/
+    /*width:100%;*/
+/*}*/
+.nav-arrows a{
+    box-shadow: 0 1px 1px rgba(255,255,255,0.8);
+    background-color: black;
+    opacity: 0.4;
+}
